@@ -12,10 +12,45 @@
     background-color: rgb(110, 195, 216);
     
 }
+
+.h2-sub{
+    width: 70%;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
 .show{
     display: !important;
 }
 
 .hide{
     display: none;
+}
+
+.page{
+    background-image: url("../gambar/telkomgedung.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-y: top;
+
+}
+
+.page .navbar p{
+    color: white;
+    font-size: 40px;
+    margin: 20px 50px;
+}
+
+.page .navbar ul{
+    color: white;
+    font-size: 20px;
+    margin: 20px 50px;
+}
+
+.page .navbar button{
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
 }

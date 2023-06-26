@@ -178,8 +178,11 @@ return(
   return (
     <div>
       <center><br />
-        <h2>DATA PELANGGAN</h2>
-        <h2>PT TELKOM INDONESIA TBK TAHUN 2023</h2>
+      <div className="logo">
+        <div className="h2-sub">
+        <h2 style={{backgroundColor:"red"}}>DATA LAYANAN PELANGGAN</h2>
+        <h2 style={{backgroundColor:"white", color:"red"}}>PT TELKOM INDONESIA TBK TAHUN 2023</h2>
+        </div>
        <form id="formadd" className={stateadd} onSubmit={handleSubmitAdd} >
         <table border={0}>
             <tbody>
@@ -272,16 +275,16 @@ return(
         <br/>
         <br/>
         <button style={{backgroundColor:"green",color:"white",padding:"3px",borderRadius:"8px"}} id="btnadd" onClick={handleAdd} className={statebutonadd}>Tambah Data</button><br /><br />
-        <table style={{width:"70%"}}border={1}>
+        <table style={{width:"70%"}} border={6}>
             <thead>
                 <tr style={{textAlign:"center",backgroundColor:"red",color:"white"}}>
-                <td><b>ID</b></td> 
-                <td><b>Nama</b></td>
-                <td><b>Foto</b></td>
-                <td><b>Tanggal Order</b></td>
+                <td><b>ID Pelanggan</b></td> 
+                <td><b>Nama Pelanggan</b></td>
+                <td><b>Logo</b></td>
+                <td><b>Tanggal Kontrak</b></td>
                 <td><b>Alamat</b></td>
-                <td><b>Produk</b></td>
-                <td><b>Harga</b></td>
+                <td><b>Layanan</b></td>
+                <td><b>Nilai Kontrak</b></td>
                 <td colSpan={2}><b>Action</b></td>
                 </tr>
             </thead>
@@ -301,6 +304,7 @@ return(
            )}     
                    </tbody>
           </table>
+          </div>
           </center>
           </div>
         )

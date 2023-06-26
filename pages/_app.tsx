@@ -1,14 +1,8 @@
 import '@/styles/globals.css'
 import '@/styles/form.css'
 
-import FormTelkom from './forminputtelkom'
-
-export default function ProfileForm() {
-  return (
-   
-    <FormTelkom />
-
-    )
+export default function MyApp({Component, pageProps}) {
+  return <Component {...pageProps} />
  
 }
 
